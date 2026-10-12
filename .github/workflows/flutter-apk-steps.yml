@@ -1,0 +1,19 @@
+# Merge these steps into the existing workflow AFTER Flutter + Java/Android SDK setup.
+# Do not replace the complete workflow blindly.
+- name: Get Flutter dependencies
+  run: flutter pub get
+
+- name: Analyze Dart code
+  run: flutter analyze
+
+- name: Run Flutter tests
+  run: flutter test
+
+- name: Build release APK
+  run: flutter build apk --release
+
+- name: Upload APK artifact
+  uses: actions/upload-artifact@v4
+  with:
+    name: PrivateAgent-release-apk
+    path: build/app/outputs/flutter-apk/app-release.apk

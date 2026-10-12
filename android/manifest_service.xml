@@ -1,0 +1,6 @@
+<!-- Merge inside <application> in android/app/src/main/AndroidManifest.xml.
+     The class name/package must match your actual Kotlin service. -->
+<service
+    android:name=".voice.VoiceWakeService"
+    android:exported="false"
+    android:foregroundServiceType="microphone" />
