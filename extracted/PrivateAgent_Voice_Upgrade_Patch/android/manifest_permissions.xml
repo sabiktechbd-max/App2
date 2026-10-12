@@ -1,0 +1,6 @@
+<!-- Merge these permissions into android/app/src/main/AndroidManifest.xml.
+     Remove duplicates. Confirm requirements against the project's target SDK. -->
+<uses-permission android:name="android.permission.RECORD_AUDIO" />
+<uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+<uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
+<uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
